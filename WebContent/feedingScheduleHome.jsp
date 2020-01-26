@@ -49,7 +49,11 @@
 						<td><c:out value="${fs.notes}" /></td>
 						<!-- view all animals assigned to feeding schedule -->
 						<td><c:out value = "${fsAnimalMap[fs.scheduleID] }"/> </td>
-						<td><button type="button" onclick="" value="${fs.scheduleID}">delete</button></td>
+						<td>
+							<form action="deleteFeedingSchedule" method="post">
+								<button type="submit" name="delete" value="${fs.scheduleID}">Delete</button>
+							</form>
+						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
