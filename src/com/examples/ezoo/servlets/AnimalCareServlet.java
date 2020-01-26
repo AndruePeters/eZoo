@@ -46,6 +46,4 @@ public class AnimalCareServlet extends HttpServlet {
 		
 		request.getRequestDispatcher("animalCareHome.jsp").forward(request, response);
 	}
-
-
 }

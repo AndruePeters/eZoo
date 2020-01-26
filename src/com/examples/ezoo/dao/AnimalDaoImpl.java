@@ -121,7 +121,19 @@ public class AnimalDaoImpl implements AnimalDAO {
 			// then update didn't occur, throw an exception
 			throw new Exception("Insert animal failed: " + animal);
 		}
-
 	}
-
+	
+	@Override
+	public List<Long> getAnimalsFromFeedingSchedule(Long scheduleID) {
+		AnimalDAO dao = DAOUtilities.getAnimalDao();
+		List<Animal> animals = dao.getAllAnimals();
+		List<Long> retAnimalID = new ArrayList<>();
+		
+		for (Animal a : animals) {	
+			if (a.getFeedingSchedule() == scheduleID) {
+				retAnimalID.add(a.getAnimalID());
+			}
+		}
+		return retAnimalID;
+	}
 }
