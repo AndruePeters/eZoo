@@ -30,7 +30,7 @@ public class AddAnimalServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Get Parameters
 		//We MUST convert to a Long since parameters are always Strings
-		long animalid = Long.parseLong(request.getParameter("animalid"));
+		long animalid = Long.parseLong(request.getParameter("animalID"));
 		String name = request.getParameter("name");
 		String kingdom = request.getParameter("kingdom");
 		String phylum = request.getParameter("phylum");
