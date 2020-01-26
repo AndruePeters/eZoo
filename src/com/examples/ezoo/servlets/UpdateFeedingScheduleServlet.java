@@ -27,16 +27,16 @@ public class UpdateFeedingScheduleServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Get Parameters
-		long schedule_ID = Long.parseLong(request.getParameter("schedule_ID"));
-		String feeding_time = request.getParameter("feeding_time");
+		long scheduleID = Long.parseLong(request.getParameter("scheduleID"));
+		String feedingTime = request.getParameter("feedingTime");
 		String recurrence = request.getParameter("recurrence");
 		String food = request.getParameter("food");
 		String notes = request.getParameter("notes");
 		
 		//Create a FeedingSchedule object from the parameters
 		FeedingSchedule fs = new FeedingSchedule(
-				schedule_ID,
-				feeding_time,
+				scheduleID,
+				feedingTime,
 				recurrence,
 				food,
 				notes);

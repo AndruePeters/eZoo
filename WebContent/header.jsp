@@ -54,7 +54,7 @@
                         <a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Animal Care<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="animalCareHome">Animal Home (Level 100)</a></li>
-                          <li><a href="feedingScheduleHome.jsp">Feeding Schedule Home</a></li>
+                          <li><a href="feedingScheduleHome">Feeding Schedule Home</a></li>
                           <li class="divider"></li>
                           <li><a href="addAnimal">Add Animal</a></li>
                           <li><a href="createFeedingSchedule.jsp">Add Feeding Schedule</a></li>

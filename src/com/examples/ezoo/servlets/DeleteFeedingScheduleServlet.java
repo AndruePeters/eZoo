@@ -26,12 +26,12 @@ public class DeleteFeedingScheduleServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Get Parameters
 		//We MUST convert to a Long since parameters are always Strings
-		long schedule_ID = Long.parseLong(request.getParameter("schedule_ID"));
+		long scheduleID = Long.parseLong(request.getParameter("scheduleID"));
 		
 		//Call DAO method
 		FeedingScheduleDAO dao = DAOUtilities.getFeedingScheduleDao();
 		try {
-			dao.deleteFeedingSchedule(schedule_ID);
+			dao.deleteFeedingSchedule(scheduleID);
 			request.getSession().setAttribute("message", "FeedingSchedule successfully deleted");
 			request.getSession().setAttribute("messageClass", "alert-success");
 			response.sendRedirect("animalCareHome");
