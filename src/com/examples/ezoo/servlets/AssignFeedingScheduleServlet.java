@@ -27,14 +27,14 @@ public class AssignFeedingScheduleServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Get Parameters
 		long animalID = Long.parseLong(request.getParameter("animalID"));
-		long schedule_ID = Long.parseLong(request.getParameter("schedule_ID"));
+		long scheduleID = Long.parseLong(request.getParameter("scheduleID"));
 		String assign = request.getParameter("(un)assign");
 		
 		//Call DAO method
 		FeedingScheduleDAO dao = DAOUtilities.getFeedingScheduleDao();
 		try {
 			if (assign.equals("Assign")) {
-				dao.assignFeedingSchedule(schedule_ID, animalID);
+				dao.assignFeedingSchedule(scheduleID, animalID);
 				request.getSession().setAttribute("message", "FeedingSchedule successfully assigned");
 			}
 			else {
