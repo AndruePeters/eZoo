@@ -56,7 +56,7 @@
                           <li><a href="animalCareHome">Animal Home (Level 100)</a></li>
                           <li><a href="feedingScheduleHome.jsp">Feeding Schedule Home</a></li>
                           <li class="divider"></li>
-                          <li><a href="addAnimal.jsp">Add Animal</a></li>
+                          <li><a href="addAnimal">Add Animal</a></li>
                           <li><a href="createFeedingSchedule.jsp">Add Feeding Schedule</a></li>
                           <li><a href="assignFeedingSchedule.jsp">(un)Assign Feeding Schedule</a></li>
                           <li><a href="updateFeedingSchedule.jsp">Update Feeding Schedule</a></li>
