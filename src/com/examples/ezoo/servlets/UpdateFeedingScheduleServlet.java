@@ -47,7 +47,7 @@ public class UpdateFeedingScheduleServlet extends HttpServlet {
 			dao.updateFeedingSchedule(fs);
 			request.getSession().setAttribute("message", "FeedingSchedule successfully updated");
 			request.getSession().setAttribute("messageClass", "alert-success");
-			response.sendRedirect("animalCare");
+			response.sendRedirect("animalCareHome");
 		}catch (Exception e){
 			e.printStackTrace();
 			

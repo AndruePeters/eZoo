@@ -34,7 +34,7 @@ public class DeleteFeedingScheduleServlet extends HttpServlet {
 			dao.deleteFeedingSchedule(schedule_ID);
 			request.getSession().setAttribute("message", "FeedingSchedule successfully deleted");
 			request.getSession().setAttribute("messageClass", "alert-success");
-			response.sendRedirect("animalCare");
+			response.sendRedirect("animalCareHome");
 		}catch (Exception e){
 			e.printStackTrace();
 			

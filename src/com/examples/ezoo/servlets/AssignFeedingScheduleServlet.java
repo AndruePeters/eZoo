@@ -42,7 +42,7 @@ public class AssignFeedingScheduleServlet extends HttpServlet {
 				request.getSession().setAttribute("message", "FeedingSchedule successfully removed");
 			}
 			request.getSession().setAttribute("messageClass", "alert-success");
-			response.sendRedirect("animalCare");
+			response.sendRedirect("animalCareHome");
 		}catch (Exception e){
 			e.printStackTrace();
 			
