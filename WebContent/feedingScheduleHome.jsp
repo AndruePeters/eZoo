@@ -40,15 +40,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="feeding_schedule" items="${feeding_schedules}">
+				<c:forEach var="feeding_schedule" items="${fs}">
 					<tr>
-						<td><fmt:formatNumber value="${feeding_schedule.schedule_ID}"/></td>
-						<td><c:out value="${feeding_schedule.feeding_time}" /></td>
+						<td><fmt:formatNumber value="${feeding_schedule.scheduleID}"/></td>
+						<td><c:out value="${feeding_schedule.feedingTime}" /></td>
 						<td><c:out value="${feeding_schedule.recurrence}" /></td>
 						<td><c:out value="${feeding_schedule.food}" /></td>
 						<td><c:out value="${feeding_schedule.notes}" /></td>
 						<!-- view all animals assigned to feeding schedule -->
-						<td><button type="button" onclick="" value="${feeding_schedule.schedule_ID}">delete</button></td>
+						<td></td>
+						<td><button type="button" onclick="" value="${feeding_schedule.scheduleID}">delete</button></td>
 					</tr>
 				</c:forEach>
 			</tbody>
