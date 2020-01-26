@@ -44,7 +44,7 @@ public class Animal{
 
 	public Animal(long animalID, String name, String taxKingdom, String taxPhylum, String taxClass, String taxOrder,
 			String taxFamily, String taxGenus, String taxSpecies, double height, double weight, String type,
-			String healthStatus, long feeding_schedule) {
+			String healthStatus, long feedingSchedule) {
 		super();
 		this.animalID = animalID;
 		this.name = name;
@@ -59,7 +59,7 @@ public class Animal{
 		this.weight = weight;
 		this.type = type;
 		this.healthStatus = healthStatus;
-		this.feedingSchedule = feeding_schedule;
+		this.feedingSchedule = feedingSchedule;
 	}
 
 	public long getAnimalID() {
@@ -170,8 +170,8 @@ public class Animal{
 		return feedingSchedule;
 	}
 
-	public void setFeedingSchedule(long feeding_schedule) {
-		this.feedingSchedule = feeding_schedule;
+	public void setFeedingSchedule(long feedingSchedule) {
+		this.feedingSchedule = feedingSchedule;
 	}
 	
 	@Override
