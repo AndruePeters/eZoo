@@ -1,38 +1,38 @@
 package com.examples.ezoo.model;
 
 public class FeedingSchedule {
-	private long schedule_ID = 0L;
+	private long scheduleID = 0L;
 	
-	private String feeding_time = "";
+	private String feedingTime = "";
 	private String recurrence = "";
 	private String food = "";
 	private String notes = "";
 	
 	public FeedingSchedule() {}
 
-	public FeedingSchedule(long schedule_ID, String feeding_time, String recurrence, String food, String notes) {
+	public FeedingSchedule(long scheduleID, String feedingTime, String recurrence, String food, String notes) {
 		super();
-		this.schedule_ID = schedule_ID;
-		this.feeding_time = feeding_time;
+		this.scheduleID = scheduleID;
+		this.feedingTime = feedingTime;
 		this.recurrence = recurrence;
 		this.food = food;
 		this.notes = notes;
 	}
 
 	public long getScheduleID() {
-		return schedule_ID;
+		return scheduleID;
 	}
 
-	public void setScheduleID(long schedule_ID) {
-		this.schedule_ID = schedule_ID;
+	public void setScheduleID(long scheduleID) {
+		this.scheduleID = scheduleID;
 	}
 
 	public String getFeedingTime() {
-		return feeding_time;
+		return feedingTime;
 	}
 
-	public void setFeedingTime(String feeding_time) {
-		this.feeding_time = feeding_time;
+	public void setFeedingTime(String feedingTime) {
+		this.feedingTime = feedingTime;
 	}
 
 	public String getRecurrence() {
@@ -61,7 +61,7 @@ public class FeedingSchedule {
 
 	@Override
 	public String toString() {
-		return "Animal [schedule_ID=" + schedule_ID + ", feeding_time=" + feeding_time + ", recurrence=" + recurrence + ", food="
+		return "Animal [scheduleID=" + scheduleID + ", feedingTime=" + feedingTime + ", recurrence=" + recurrence + ", food="
 				+ food + ", notes=" + notes + "]";
 	}
 }
