@@ -26,9 +26,9 @@
 		<form action="addAnimal" method="post" class="form-horizontal">
 		
 		  <div class="form-group">
-		    <label for="id" class="col-sm-4 control-label">ID</label>
+		    <label for="animalID" class="col-sm-4 control-label">Animal ID</label>
 		    <div class="col-sm-4">
-		      <input type="number" class="form-control" id="animalID" name="animalID" placeholder="ID" required="required"/>
+		      <input type="number" class="form-control" id="animalID" name="animalID" placeholder="Animal ID" required="required"/>
 		    </div>
 		  </div>
 		  <div class="form-group">
@@ -136,6 +136,12 @@
 		    <label for="species" class="col-sm-4 control-label">Species</label>
 		    <div class="col-sm-4">
 		      <input type="text" class="form-control" id="species" name="species" placeholder="Species" required="required"/>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="scheduleID" class="col-sm-4 control-label">Schedule ID</label>
+		    <div class="col-sm-4">
+		      <input type="number" class="form-control" id="scheduleID" name="scheduleID" placeholder="Schedule ID"/>
 		    </div>
 		  </div>
 		  <div class="form-group">

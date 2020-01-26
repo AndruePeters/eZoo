@@ -49,7 +49,7 @@ public class CreateFeedingScheduleServlet extends HttpServlet {
 			dao.addFeedingSchedule(fs);
 			request.getSession().setAttribute("message", "FeedingSchedule successfully created");
 			request.getSession().setAttribute("messageClass", "alert-success");
-			response.sendRedirect("animalCare");
+			response.sendRedirect("animalCareHome");
 		}catch(SQLIntegrityConstraintViolationException e){
 			e.printStackTrace();
 			
