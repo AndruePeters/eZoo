@@ -57,9 +57,9 @@
                           <li><a href="feedingScheduleHome">Feeding Schedule Home</a></li>
                           <li class="divider"></li>
                           <li><a href="addAnimal">Add Animal</a></li>
-                          <li><a href="createFeedingSchedule.jsp">Add Feeding Schedule</a></li>
-                          <li><a href="assignFeedingSchedule.jsp">(un)Assign Feeding Schedule</a></li>
-                          <li><a href="updateFeedingSchedule.jsp">Update Feeding Schedule</a></li>
+                          <li><a href="createFeedingSchedule">Add Feeding Schedule</a></li>
+                          <li><a href="assignFeedingSchedule">(un)Assign Feeding Schedule</a></li>
+                          <li><a href="updateFeedingSchedule">Update Feeding Schedule</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
