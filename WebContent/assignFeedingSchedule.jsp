@@ -28,7 +28,7 @@
 		  <div class="form-group">
 		    <label for="animalID" class="col-sm-4 control-label">Animal ID</label>
 		    <div class="col-sm-4">
-		      <input type="number" class="form-control" id="animalID" name="schedule_ID" placeholder="Animal ID" required="required"/>
+		      <input type="number" class="form-control" id="animalID" name="animalID" placeholder="Animal ID" required="required"/>
 		    </div>
 		  </div>
 		  <div class="form-group">
@@ -47,7 +47,7 @@
 		  <div class="form-group">
 		    <label for="scheduleID" class="col-sm-4 control-label">Schedule ID [Ignore if Removing]</label>
 		    <div class="col-sm-4">
-		      <input type="number" class="form-control" id="scheduleID" name="schedulID" placeholder="Schedule ID"/>
+		      <input type="number" class="form-control" id="scheduleID" name="scheduleID" placeholder="Schedule ID"/>
 		    </div>
 		  </div>
 		  <div class="form-group">
