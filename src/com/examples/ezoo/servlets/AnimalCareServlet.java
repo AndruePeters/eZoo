@@ -17,7 +17,7 @@ import com.examples.ezoo.model.Animal;
 /**
  * Servlet implementation class AnimalCareServlet
  */
-@WebServlet(description = "This servlet is the main interface into the Animal Care System", urlPatterns = { "/animalCare" })
+@WebServlet(description = "This servlet is the main interface into the Animal Care System", urlPatterns = { "/animalCareHome" })
 public class AnimalCareServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -31,7 +31,6 @@ public class AnimalCareServlet extends HttpServlet {
 
 		// Populate the list into a variable that will be stored in the session
 		request.getSession().setAttribute("animals", animals);
-		
 		Animal largest = new Animal();
 		for (Animal a : animals)
 			if (a.getWeight() > largest.getWeight())

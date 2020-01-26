@@ -58,7 +58,7 @@
 						
 						<td><c:out value="${animal.type}" /></td>
 						<td><c:out value="${animal.healthStatus}" /></td>
-						<td><c:out value="${animal.feeding_schedule}" /></td>
+						<td><c:out value="${animal.feedingSchedule}" /></td>
 					</tr>
 				</c:forEach>
 			</tbody>

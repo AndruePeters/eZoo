@@ -19,7 +19,7 @@ public class Animal{
 	private String type = "";
 	private String healthStatus = "";
 	
-	private long feeding_schedule = 0L;
+	private long feedingSchedule = 0L;
 	
 	public Animal() {}
 	
@@ -59,7 +59,7 @@ public class Animal{
 		this.weight = weight;
 		this.type = type;
 		this.healthStatus = healthStatus;
-		this.feeding_schedule = feeding_schedule;
+		this.feedingSchedule = feeding_schedule;
 	}
 
 	public long getAnimalID() {
@@ -167,11 +167,11 @@ public class Animal{
 	}
 
 	public long getFeedingSchedule() {
-		return feeding_schedule;
+		return feedingSchedule;
 	}
 
 	public void setFeedingSchedule(long feeding_schedule) {
-		this.feeding_schedule = feeding_schedule;
+		this.feedingSchedule = feeding_schedule;
 	}
 	
 	@Override
@@ -179,6 +179,6 @@ public class Animal{
 		return "Animal [animalID=" + animalID + ", name=" + name + ", taxKingdom=" + taxKingdom + ", taxPhylum="
 				+ taxPhylum + ", taxClass=" + taxClass + ", taxOrder=" + taxOrder + ", taxFamily=" + taxFamily
 				+ ", taxGenus=" + taxGenus + ", taxSpecies=" + taxSpecies + ", height=" + height + ", weight=" + weight
-				+ ", type=" + type + ", healthStatus=" + healthStatus + ", feeding_schedule=" + feeding_schedule + "]";
+				+ ", type=" + type + ", healthStatus=" + healthStatus + ", feedingSchedule=" + feedingSchedule + "]";
 	}
 }
