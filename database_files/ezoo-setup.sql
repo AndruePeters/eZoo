@@ -53,5 +53,5 @@ insert into feeding_schedules values (
   ''   -- notes
 );
 
-SELECT * FROM public.animals
+-- SELECT * FROM public.animals
 -- SELECT * FROM public.feeding_schedules
